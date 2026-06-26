@@ -74,7 +74,7 @@ public class JanelaEditar extends JFrame {
         contentPane.add(btnSalvar, "cell 0 5 2 1,alignx center,aligny bottom");
     }
 
-    // Getters para ler e escrever os dados de fora
+    
     public JTextField getTxtNome() { return txtNome; }
     public JTextField getTxtEditora() { return txtEditora; }
     public JTextField getTxtAno() { return txtAno; }

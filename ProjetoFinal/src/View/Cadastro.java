@@ -25,11 +25,11 @@ public class Cadastro extends JFrame {
 	private JTextField txtAno;
 	private JTextField txtAutor;
 	
-	// Componentes expostos para o Controller (Padrão JanelaPessoa)
+	
 	private JComboBox comboBox;
 	private JButton botaoCadastrar;
 	private JButton botaoMostrar;
-	// Caso use o botão remover no futuro, adicione o atributo aqui
+	
 
 	/**
 	 * Launch the application.
@@ -128,7 +128,7 @@ public class Cadastro extends JFrame {
 	    lblNewLabel_1_1_1_1_1_1.setFont(new Font("Tahoma", Font.BOLD, 30));
 	    panel.add(lblNewLabel_1_1_1_1_1_1, "cell 0 17 6 1,alignx center");
 	    
-	    // Atribuição direta ao atributo global (sem o 'JComboBox' na frente)
+	    
 	    comboBox = new JComboBox();
 	    comboBox.setModel(new DefaultComboBoxModel(Generos.values()));
 	    panel.add(comboBox, "cell 2 18,growx");
@@ -137,14 +137,14 @@ public class Cadastro extends JFrame {
 	    panel_1.setVisible(false);
 	    panel.add(panel_1, "cell 1 20,grow");
 	    
-	    // Atribuição ao atributo global
+	   
 	    botaoMostrar = new JButton("");
 	    botaoMostrar.setContentAreaFilled(false);
 	    botaoMostrar.setBorderPainted(false);
 	    botaoMostrar.setIcon(new ImageIcon(Cadastro.class.getResource("/imagens/MostrarTabela.png")));
 	    panel.add(botaoMostrar, "flowx,cell 2 20");
 	    
-	    // Atribuição ao atributo global
+	    
 	    botaoCadastrar = new JButton("");
 	    botaoCadastrar.setContentAreaFilled(false);
 	    botaoCadastrar.setBorderPainted(false);

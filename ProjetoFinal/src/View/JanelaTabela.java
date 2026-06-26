@@ -18,7 +18,7 @@ public class JanelaTabela extends JFrame {
     private JPanel contentPane;
     private JTable table;
     private JButton btnRemover;
-    private JButton btnEditar; // NOVO BOTÃO
+    private JButton btnEditar; 
 
     public JanelaTabela() {
     	setIconImage(Toolkit.getDefaultToolkit().getImage(JanelaTabela.class.getResource("/imagens/Logo.png")));
@@ -40,7 +40,7 @@ public class JanelaTabela extends JFrame {
         table.setBackground(Color.WHITE);
         scrollPane.setViewportView(table);
 
-        // Painel inferior para agrupar os botões lado a lado
+        
         JPanel painelBotoes = new JPanel();
         painelBotoes.setBackground(new Color(175, 244, 198));
         contentPane.add(painelBotoes, "cell 0 1,alignx center");
@@ -70,7 +70,7 @@ public class JanelaTabela extends JFrame {
         return btnRemover;
     }
 
-    public JButton getBtnEditar() { // GETTER PARA O CONTROLLER
+    public JButton getBtnEditar() { 
         return btnEditar;
     }
 }
